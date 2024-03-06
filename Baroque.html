@@ -17,11 +17,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .icon-container {
         position: absolute;
         top: 10px; /* Adjust as needed */
         left: 10px; /* Adjust as needed */
+      }
+      .text {
+        font-family: "PT Serif", serif;
+        font-weight: 400;
+        font-style: normal;
       }
     </style>
   </head>
@@ -30,7 +41,10 @@
     <!-- Top Nav -->
     <div class="flex justify-center bg-black text-white p-3">
       Free shipping in
-      <a class="underline ml-1" href="https://en.wikipedia.org/wiki/Pakistan">
+      <a
+        class="text underline ml-1"
+        href="https://en.wikipedia.org/wiki/Pakistan"
+      >
         Pakistan</a
       >
     </div>
@@ -38,14 +52,14 @@
     <!-- Header -->
     <div
       style="
-        background-image: url(https://baroque.pk/cdn/shop/files/banner_web.jpg);
+        background-image: url(bg.jpg);
         height: 93vh;
         background-position: center;
         background-size: cover;
       "
       class="relative"
     >
-      <div class="flex pt-2 items-center mx-12 justify-between flex-wrap">
+      <div class="flex pt-2 items-center mx-12 justify-between flex-wrap hover:bg-gray-900">
         <div>
           <i class="bi bi-list text-black text-xl font-extrabold"></i>
         </div>
@@ -58,7 +72,7 @@
         </div>
         <div class="flex gap-x-4">
           <div class="hidden md:block">
-            <span>Pakistan</span>
+            <span class="text">Pakistan</span>
             <i class="bi bi-caret-down-fill"></i>
           </div>
           <i class="bi bi-person hidden md:block"></i>
@@ -77,32 +91,71 @@
     </div>
     <div class="mt-20">
       <div class="flex wrap gap-4 grid-cols-2">
-        <div>
+        <div class="relative">
           <img
-            style="width: 1100px;"
+            style="width: 1100px"
             src="https://baroque.pk/cdn/shop/files/02_Banner76.jpg"
             alt=""
+            title="READY TO WEAR"
           />
+          <h1
+            class="absolute text bottom-20 left-72 text-white tracking-widest"
+          >
+            READY TO WEAR
+          </h1>
+          <button class="absolute bottom-5 left-1/2 py-3 px-6 bg-white bg-black hover:bg-transparent transition border-black border-2 hover:text-black text-white xl transform -translate-x-1/2">
+            <!--   hover:border-solid border-2 border-gray-800 -->
+            SHOP NOW
+          </button>
         </div>
-        <div>
-          <img style="width: 1100px;"
+        <div class="relative">
+          <img
+            style="width: 1100px"
             src="https://baroque.pk/cdn/shop/files/02_Banner78.jpg"
             alt=""
+            title="Chantelle"
           />
+          <h1
+            class="absolute text bottom-20 left-72 text-white tracking-widest"
+          >
+            CHANTELLE
+          </h1>
+          <button class="absolute bottom-5 left-1/2 py-3 px-6 bg-white bg-black hover:bg-transparent transition border-black border-2 hover:text-black text-white xl transform -translate-x-1/2">
+            SHOP NOW
+          </button>
         </div>
       </div>
-      <div class="flex wrap gap-4 grid-cols-2">
-        <div>
-          <img style="width: 1100px;"
+      <div class="flex wrap gap-4 grid-cols-2 mt-6">
+        <div class="relative">
+          <img
+            style="width: 1100px"
             src="https://baroque.pk/cdn/shop/files/02_Banner77.jpg"
             alt=""
+            title="unstitched"
           />
+          <h1
+            class="absolute text bottom-20 left-72 text-white tracking-widest"
+          >
+            UNSTITCHED
+          </h1>
+          <button class="absolute bottom-5 left-1/2 py-3 px-6 bg-white bg-black hover:bg-transparent transition border-black border-2 hover:text-black text-white xl transform -translate-x-1/2">
+            SHOP NOW
+          </button>
         </div>
-        <div>
-          <img style="width: 1100px;"
+        <div class="relative">
+          <img
+            style="width: 1100px"
             src="https://baroque.pk/cdn/shop/files/02_Banner79.jpg"
             alt=""
           />
+          <h1
+            class="absolute text bottom-20 left-72 font text-white tracking-widest"
+          >
+            SPECIAL PRICES
+          </h1>
+          <button class="absolute bottom-5 left-1/2 py-3 px-6 bg-white bg-black hover:bg-transparent transition border-black border-2 hover:text-black text-white xl transform -translate-x-1/2">
+            SHOP NOW
+          </button>
         </div>
       </div>
     </div>
