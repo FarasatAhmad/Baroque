@@ -34,6 +34,43 @@
         font-weight: 400;
         font-style: normal;
       }
+
+      /* Not working  |
+                      |
+                     \|/ */
+/*
+      .hover::before {
+      content: "";
+      width: 0%;
+      position: absolute;
+      height: 100%;
+      background-color: red;
+       animation-name: frasat; 
+      animation-duration: 3s;
+    }
+
+    .hover:hover::before {
+      background-color: rgb(255, 0, 0);
+       width: 50px ;
+       animation-name: anim;
+animation-duration: 2s;
+      animation-name: frasat;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes frasat {
+      0% {
+        width: 0%;
+      } 
+     50%{
+        width: 100%;
+    
+     }
+     100%{
+        width: 0%;
+     }
+    }*/
     </style>
   </head>
   <body>
@@ -82,7 +119,7 @@
       </div>
       <div>
         <a
-          class="bg-black hover:bg-transparent duration-700 border-black border-2 hover:text-black absolute bottom-1 left-1/2 text-white py-3 px-6 xl transform -translate-x-1/2"
+          class="hover bg-black hover:bg-transparent duration-700 border-black border-2 hover:text-black absolute bottom-1 left-1/2 text-white py-3 px-6 xl transform -translate-x-1/2"
           href="https://baroque.pk/collections/unstitched"
         >
           SHOP NOW
@@ -149,8 +186,8 @@
             alt=""
           />
           <h1
-            class="absolute text bottom-20 duration-700 left-72 font text-white tracking-widest"
-          >
+            class="absolute text bottom-20 left-72 text-white tracking-widest"
+          >                               
             SPECIAL PRICES
           </h1>
           <button class="absolute bottom-5 border-none duration-700 left-1/2 py-3 px-6 bg-black hover:bg-transparent transition hover:text-black text-white xl transform -translate-x-1/2">
@@ -158,6 +195,9 @@
           </button>
         </div>
       </div>
+    </div>
+    <div class="mt-20">
+      
     </div>
   </body>
 </html>
